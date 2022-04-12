@@ -9,3 +9,5 @@
 - docker-compose run app sh -c "python manage.py startapp core"
 - docker-compose run app sh -c "python manage.py makemigrations core"
 - docker-compose run app sh -c "python manage.py test && flake8"
+- Mocking:  test without depend on other services, like fake sending and email
+- docker-compose up
