@@ -11,3 +11,6 @@
 - docker-compose run app sh -c "python manage.py test && flake8"
 - Mocking:  test without depend on other services, like fake sending and email
 - docker-compose up
+- docker-compose run app sh -c "python manage.py createsuperuser"
+- docker-compose run --rm app sh -c "python manage.py startapp user"
+- docker-compose run --rm app sh -c "python manage.py test && flake8"
